@@ -9,9 +9,9 @@ app.use(cors());
 app.use(express.static("public"));
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("Raffles app");
-});
+// app.get("/", (req, res) => {
+//   res.send("Raffles app");
+// });
 
 app.use("/api/users", require("./routes/User.route"));
 app.use("/api/raffles", require("./routes/Raffle.route"));
